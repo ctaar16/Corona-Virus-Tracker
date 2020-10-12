@@ -10,7 +10,11 @@ const Graphs = (props) => {
 // })
 
     return (
-        <h1>Graphs</h1>
+        <div className = "graph">
+            <h2>Graph</h2>          
+
+        </div>
+        
     )
 }
 

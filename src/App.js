@@ -60,26 +60,26 @@ function App() {
     <div>
       <div className="whatever">
         <h1 className="header">COVID-Tracker</h1>
+        <CountrySelector />
         <Numbers />
         <Graphs />
-        <CountrySelector />
       </div>
 
       <div className="App">
         <h1>Feeling Symptomatic?</h1>
-        {reviews.map((review) => (
-          //review component has a prop called review with a value
-          <Review
-            key={review.id}
-            review={review}
-            fetchReviews={fetchReviews}
-            setFetchReviews={setFetchReviews}
-          />
-        ))}
         <CreateReview
           fetchReviews={fetchReviews}
           setFetchReviews={setFetchReviews}
         />
+        {reviews.map((covid) => (
+          //review component has a prop called review with a value
+          <Review
+            key={covid.id}
+            review={covid}
+            fetchReviews={fetchReviews}
+            setFetchReviews={setFetchReviews}
+          />
+        ))}
         <h6>Created by: Chris Haar</h6>
       </div>
     </div>

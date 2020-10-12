@@ -1,11 +1,14 @@
 
+
+* {
+  display: flexbox;
+
+}
+
 .header {
   text-align: center;
   background: rgb(66, 211, 53);
 }
-
-
-
 
 body {
   margin: 0;
@@ -27,12 +30,13 @@ button {
   display: inline-flex;
   padding: 3px;
   margin: 4px;
+  border: solid #2852a0 2px;
   
 }
 
 .name {
   display: flex block;
-  margin: 3px;
+  
 }
 
 .zip {
@@ -40,18 +44,45 @@ button {
   margin: 3px;
 }
 
+.bigdata{
+  border: solid black 2px;
+  margin: 0 auto;
+  padding: 8px;
+  display: inline-flex;
+}
 
 .infecteddata{
 border: solid black 2px;
 margin: 5px;
+padding: 15px;
+
 }
 
 .recovereddata{
   border: solid black 2px;
   margin: 5px;
+  padding: 15px;
+  
 }
 
 .deathdata {
   border: solid black 2px;
   margin: 5px;
+  padding: 15px;
+}
+
+.graph {
+  border: solid black 2px;
+  margin: 5px;
+}
+
+.selector {
+  border: solid black 2px;
+  margin: 5px;
+}
+
+.review {
+  border: solid black 2px;
+  margin: 5px;
+  
 }

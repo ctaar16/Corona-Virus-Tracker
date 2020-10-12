@@ -3,9 +3,9 @@ import React, { useState } from 'react';
 
 
 function CreateReview(props) {
-  const [zipCode, setZipCode] = useState("90210");
-  const [symptoms, setSymptoms] = useState("Rest in peace.");
-  const [name, setName] = useState("Brent");
+  const [zipCode, setZipCode] = useState("");
+  const [symptoms, setSymptoms] = useState("");
+  const [name, setName] = useState("");
 
 
     const handleSubmit = async (e) => {
@@ -35,28 +35,28 @@ function CreateReview(props) {
 
     return (
         <div>
-      <form className = "update-form" onSubmit = {handleSubmit}>
-      <label htmlFor='zipcode'>Zip Code:</label>
-      <input
-        name='zipcode'
-        type="text"
-        placeholder = "zipcode"
-        value={zipCode}
-        onChange={(e) => setZipCode(e.target.value)}/>
-      <label htmlFor='Symptoms'>Symptoms:</label>
-      <input
-        name='Symptoms'
-        type="text"
-        placeholder = "Symptoms"
-        value={symptoms}
-        onChange={(e) => setSymptoms(e.target.value)}/>
-      <label htmlFor='namer'>Name:</label>
+      <form className = "update-form" onSubmit = {handleSubmit}>  
+      <label htmlFor='name'>Name:</label>
       <input
         name='name'
         type="text"
         placeholder = "name"
         value={name}
         onChange={(e) => setName(e.target.value)}/>
+      <label htmlFor='zipcode'>Zip Code:</label>
+      <input
+        name='zipcode'
+        type="text"
+        placeholder = "zipcode"
+        value={zipCode}
+        onChange={(e) => setZipCode(e.target.value)}/> 
+      <label htmlFor='symptoms'>Symptoms:</label>
+      <input
+        name='Symptoms'
+        type="text"
+        placeholder = "Symptoms"
+        value={symptoms}
+        onChange={(e) => setSymptoms(e.target.value)}/>
       <button type='submit'>SUBMIT</button>
     </form>
     </div>

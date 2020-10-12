@@ -23,14 +23,14 @@ function Review(props) {
 
     return (
         <div className = "review">
-            <h3>{props.covid.fields.zipCode}</h3>
-            <h4>{props.covid.fields.symptoms}</h4>
-            <h5>{props.covid.fields.name}</h5>
-            <button onClick={handleDelete}>{deleted ? "YEETED" : "YEET"}</button>
-            <UpdateReview review = {props.covid}/>
-                review = {props.review}
+            <h3>{props.review.fields.name}</h3>
+            <h3>{props.review.fields.zipCode}</h3>
+            <h3>{props.review.fields.symptoms}</h3>
+            <button onClick={handleDelete}>{deleted ? "deleted" : "delete"}</button>
+            {/* <UpdateReview review = {props.review}/> */}
+                {/* review = {props.review}
                 fetchReviews = {props.fetchReviews}
-                setFetchReviews = {props.setFetchReviews}
+                setFetchReviews = {props.setFetchReviews} */}
         </div>
     );
 }

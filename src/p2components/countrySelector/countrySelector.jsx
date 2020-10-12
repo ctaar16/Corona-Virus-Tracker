@@ -13,8 +13,8 @@ const countrySelector = () => {
 
 
     return (
-        <div>
-            <h1>Country Selector</h1>
+        <div className = "selector">
+            <h2>Country Selector</h2>
         </div>
         
     )

@@ -22,9 +22,9 @@ const Squares = (props) => {
 
 
     return (
-        <div>
-             <h1>Numerical Data</h1>
-                <div>
+        <div >
+             <h2>COVID-19 Data</h2>
+                <div className = "bigdata">
                     <div className = "infecteddata">
                         <h4>Infected</h4>
                         <h6>Actual Numerical Data to be imported by api</h6>
