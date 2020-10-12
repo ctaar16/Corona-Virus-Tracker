@@ -1,17 +1,17 @@
-import React, {useState, useEffect } from "react";
-import { fetchNewData } from '../../api';
+// import React, {useState, useEffect } from "react";
+// import { fetchNewData } from '../../api';
 
 
-const Graphs = () => {
-    const[newData, setNewData] = useState ([]);
+// const Graphs = () => {
+//     const[newData, setNewData] = useState ([]);
     
-useEffect(() => {
-    const fetchNewData
-});
+// useEffect(() => {
+//     const fetchNewData
+// })
 
-    return (
-        <h1>Graphs</h1>
-    )
-}
+//     return (
+//         <h1>Graphs</h1>
+//     )
+// }
 
-export default Graphs;
+// export default Graphs;

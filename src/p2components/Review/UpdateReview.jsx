@@ -3,14 +3,14 @@ import React, { useState } from 'react';
 
 
 function UpdateReview(props) {
-    const [zipCode, setZipCode] = useState(props.review.fields.zipCode);
-    const [symptoms, setSymptoms] = useState(props.review.fields.symptoms);
-    const [name, setName] = useState(props.review.fields.name);
+    const [zipCode, setZipCode] = useState(props.covid.fields.zipCode);
+    const [symptoms, setSymptoms] = useState(props.covid.fields.symptoms);
+    const [name, setName] = useState(props.covid.fields.name);
 
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        //we have to make a field object taht holds the title, text, and author.
+        //we have to make a field object that holds the zipcode, symptoms, and name.
        
         const fields = {
             zipCode,
@@ -18,7 +18,7 @@ function UpdateReview(props) {
             name,
         };
         // make POST request to our endpoint
-        const airtableURL = `https://api.airtable.com/v0/${process.env.REACT_APP_AIRTABLE_BASE}/COVID{props.COVID.id}`;
+        const airtableURL = `https://api.airtable.com/v0/${process.env.REACT_APP_AIRTABLE_BASE}/covid/${props.covid.id}`;
         await Axios.post(airtableURL, {fields}, {
             headers: {
                 Authorization: `Bearer ${process.env.REACT_APP_AIRTABLE_KEY}`

@@ -11,9 +11,7 @@ function CreateReview(props) {
     const handleSubmit = async (e) => {
         e.preventDefault();
         //we have to make a field object taht holds the title, text, and author.
-       
-       
-        
+     
         const fields = {
             zipCode,
             symptoms,
