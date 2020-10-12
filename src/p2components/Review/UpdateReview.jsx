@@ -60,4 +60,4 @@ function UpdateReview(props) {
     );
 }
 
-export default UpdateReview();
+export default UpdateReview;

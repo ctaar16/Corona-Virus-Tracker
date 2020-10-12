@@ -39,3 +39,19 @@ button {
   display: flex block;
   margin: 3px;
 }
+
+
+.infecteddata{
+border: solid black 2px;
+margin: 5px;
+}
+
+.recovereddata{
+  border: solid black 2px;
+  margin: 5px;
+}
+
+.deathdata {
+  border: solid black 2px;
+  margin: 5px;
+}
