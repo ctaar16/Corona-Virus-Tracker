@@ -1,9 +1,22 @@
-import React from "react";
+import React, {useState, useEffect }from "react";
 
 
 const countrySelector = () => {
+    const [fetchCountries, setFetchCountries] = useState([]);
+
+    useEffect(() => {
+        const fetchCountries = async () => {
+            setFetchCountries
+        }
+    })  
+
+
+
     return (
-        <h1>Country Selector</h1>
+        <div>
+            <h1>Country Selector</h1>
+        </div>
+        
     )
 }
 
