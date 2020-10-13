@@ -38,23 +38,26 @@ function CreateReview(props) {
       <form className = "update-form" onSubmit = {handleSubmit}>  
       <label htmlFor='name'>Name:</label>
       <input
+        className = "namebox"
         name='name'
         type="text"
-        placeholder = "name"
+        placeholder = "Name"
         value={name}
         onChange={(e) => setName(e.target.value)}/>
       <label htmlFor='zipcode'>Zip Code:</label>
       <input
+        className = "zipCode"
         name='zipcode'
         type="text"
-        placeholder = "zipcode"
+        placeholder = "Zip Code"
         value={zipCode}
         onChange={(e) => setZipCode(e.target.value)}/> 
       <label htmlFor='symptoms'>Symptoms:</label>
       <input
+        className = "symptoms"
         name='Symptoms'
         type="text"
-        placeholder = "Symptoms"
+        placeholder = "Yes / No"
         value={symptoms}
         onChange={(e) => setSymptoms(e.target.value)}/>
       <button type='submit'>SUBMIT</button>

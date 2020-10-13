@@ -54,21 +54,21 @@ button {
 .infecteddata{
 border: solid black 2px;
 margin: 5px;
-padding: 15px;
+padding: 20px;
 
 }
 
 .recovereddata{
   border: solid black 2px;
   margin: 5px;
-  padding: 15px;
+  padding: 20px;
   
 }
 
 .deathdata {
   border: solid black 2px;
   margin: 5px;
-  padding: 15px;
+  padding: 20px;
 }
 
 .graph {
@@ -85,4 +85,19 @@ padding: 15px;
   border: solid black 2px;
   margin: 5px;
   
+}
+
+.namebox{
+  padding: 2px;
+  margin: 7px;
+}
+
+.zipCode {
+  padding: 2px;
+  margin: 7px;
+}
+
+.symptoms {
+  padding: 2px;
+  margin: 7px;
 }
