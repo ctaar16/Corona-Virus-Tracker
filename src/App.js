@@ -38,9 +38,9 @@ import UpdateReview from "./p2components/Review/UpdateReview";
 // }
 
 function App() {
-  
   const [reviews, setReviews] = useState([]);
   const [fetchReviews, setFetchReviews] = useState(false);
+  const [updateReviews, setUpdateReviews] = useState([]);
 
   useEffect(() => {
     const getReviews = async () => {
@@ -66,7 +66,7 @@ function App() {
       </div>
 
       <div className="App">
-        <h1>Feeling Symptomatic?</h1>
+        <h2>Feeling Symptomatic?</h2>
         <CreateReview
           fetchReviews={fetchReviews}
           setFetchReviews={setFetchReviews}
@@ -75,11 +75,13 @@ function App() {
           //review component has a prop called review with a value
           <Review
             key={covid.id}
-            review={covid}
+            covid={covid}
             fetchReviews={fetchReviews}
             setFetchReviews={setFetchReviews}
           />
         ))}
+
+        
         <h6>Created by: Chris Haar</h6>
       </div>
     </div>

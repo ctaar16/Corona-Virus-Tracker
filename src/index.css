@@ -2,12 +2,16 @@
 
 * {
   display: flexbox;
+  text-decoration: border 22px;
+  text-decoration-color:  #2852a0;
 
 }
 
 .header {
   text-align: center;
   background: rgb(66, 211, 53);
+  
+
 }
 
 body {
@@ -24,6 +28,7 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+   
 }
 
 button {
@@ -45,8 +50,8 @@ button {
 }
 
 .bigdata{
-  border: solid black 2px;
-  margin: 0 auto;
+  /* border: solid black 2px; */
+  margin: 5px;
   padding: 8px;
   display: inline-flex;
 }
@@ -69,6 +74,7 @@ padding: 20px;
   border: solid black 2px;
   margin: 5px;
   padding: 20px;
+  
 }
 
 .graph {
@@ -90,14 +96,17 @@ padding: 20px;
 .namebox{
   padding: 2px;
   margin: 7px;
+  
 }
 
 .zipCode {
   padding: 2px;
   margin: 7px;
+  
 }
 
 .symptoms {
   padding: 2px;
   margin: 7px;
+  
 }

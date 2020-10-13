@@ -58,7 +58,6 @@
       
 //       <button type='submit'>SUBMIT</button>
 
-//       <button type='submit'>DELETE</button>
 //     </form>
 //     </div>
 

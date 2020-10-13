@@ -1,25 +1,18 @@
-import React from "react";
+import axios from "axios";
+import React, { useState, useEffect } from "react";
 
+function  Numbers (props) {
+    const [apiData, setApiData]= useState ([]);
 
-const Squares = (props) => {
-
-
-
-    // async componentDidMount = () => {      //does this get placed on components and not app.js?
-    //     const response = await Axios({
-    //         "method": "GET",
-    //         "url": "https://covid-19.dataflowkit.com/v1/world",
-    //         "headers": { 
-    //               'X-rapidapi-host':  "https://covid-19.dataflowkit.com/v1/world",
-    //               'X-rapidapi-key': "7bd3a101f5msh328978bf4333f7fp1d23acjsn1b34a3cb3c34",
-    //         },
-    //     });
-    //       this.setState ({ covid: response.data });
-    //       console.log(this.state.covid);
-
-    // };   
-
-
+useEffect(() => {
+    const popularData = async () => {
+        const popularDataEnds = await axios.get(`https://covid-19.dataflowkit.com/v1/usa`
+    );
+    setApiData(popularDataEnds.data);
+};
+popularData();
+}, []);
+console.log(apiData)
 
     return (
         <div >
@@ -51,4 +44,4 @@ const Squares = (props) => {
     )
 }
 
-export default Squares;
+export default Numbers;
