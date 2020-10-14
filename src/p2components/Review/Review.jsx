@@ -27,6 +27,11 @@ function Review(props) {
                 <Link to= "/" >
                     <h3> Home </h3>
                 </Link>
+
+                <Link to= "/CreateReview" >
+                    <h3> Create Review </h3>
+                </Link>
+
             </div>
         
             <div className = "review">

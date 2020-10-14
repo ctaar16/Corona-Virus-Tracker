@@ -5,6 +5,8 @@ import Review from "./p2components/Review/Review";
 import CreateReview from "./p2components/Review/CreateReview";
 import Home from "./p2components/Home";
 import { Link, Route } from "react-router-dom";
+import Footer from "./p2components/Footer";
+import Header from "./p2components/Header";
 
 
 
@@ -31,7 +33,10 @@ function App() {
   return (
     <div>
       <div className="whatever">
-        <h1 className="header">COVID-Tracker</h1>
+        {/* <h1 className="header">COVID-Tracker</h1> */}
+        <Route>
+          <Header/>
+        </Route>
         <Route exact path ="/">
         <Home />
         </Route>
@@ -58,7 +63,11 @@ function App() {
           />
         ))}
         </Route>
-        <h6>Created by: Chris Haar</h6>
+
+        <Route>
+          <Footer />
+        </Route>
+
       </div>
     </div>
   );

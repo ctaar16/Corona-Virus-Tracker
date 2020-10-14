@@ -107,6 +107,32 @@ padding: 20px;
 
 .symptoms {
   padding: 2px;
-  margin: 7px;
-  
+  margin: 7px; 
+}
+
+
+
+/* Media Queries sourced from https://css-tricks.com/snippets/css/media-queries-for-standard-devices/ */
+
+/* mobile */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) { 
+
+}
+
+/* tablet */
+@media only screen 
+  and (min-device-width: 834px) 
+  and (max-device-width: 1112px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+}
+
+/* Desktop/laptop */
+@media screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 1600px) 
+  and (-webkit-min-device-pixel-ratio: 1) { 
 }
