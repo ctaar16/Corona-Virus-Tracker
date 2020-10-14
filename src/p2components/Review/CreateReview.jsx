@@ -1,5 +1,6 @@
 import axios from 'axios';
 import React, { useState } from 'react';
+import { Link } from "react-router-dom";  
 
 
 function CreateReview(props) {
@@ -26,14 +27,26 @@ function CreateReview(props) {
           } 
         );
         props.setFetchReviews(!props.fetchReviews);
-         //make anothe GET request?
-         //clear out our inputs so we can type something new in
+         
         setZipCode("");
         setSymptoms("");
         setName("");
+       
+
+
     };
 
     return (
+
+<div>
+      <Link to= "/" >
+      <h3> Home </h3>
+      </Link>
+
+      <Link to= "/Review" >
+      <h3> See Reviews </h3>
+      </Link>
+
         <div>
           <form className = "update-form" onSubmit = {handleSubmit}>  
             <label htmlFor='name'>Name:</label>
@@ -62,6 +75,7 @@ function CreateReview(props) {
                 onChange={(e) => setSymptoms(e.target.value)}/>
               <button type='submit'>SUBMIT</button>
           </form>
+        </div>
         </div>
     );
 }

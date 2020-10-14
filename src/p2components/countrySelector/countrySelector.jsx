@@ -1,23 +1,23 @@
-import React, {useState, useEffect }from "react";
+// import React, {useState, useEffect }from "react";
 
 
-const countrySelector = () => {
-    // const [fetchCountries, setFetchCountries] = useState([]);
+// const countrySelector = () => {
+//     // const [fetchCountries, setFetchCountries] = useState([]);
 
-    // useEffect(() => {
-    //     const fetchCountries = async () => {
-    //         setFetchCountries
-    //     }
-    // })  
+//     // useEffect(() => {
+//     //     const fetchCountries = async () => {
+//     //         setFetchCountries
+//     //     }
+//     // })  
 
 
 
-    return (
-        <div className = "selector">
-            <h2>Country Selector</h2>
-        </div>
+//     return (
+//         <div className = "selector">
+//             <h2>Country Selector</h2>
+//         </div>
         
-    )
-}
+//     )
+// }
 
-export default countrySelector;
+// export default countrySelector;

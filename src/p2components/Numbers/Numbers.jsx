@@ -1,12 +1,16 @@
 import axios from "axios";
 import React, { useState, useEffect } from "react";
 
+
+
 function  Numbers (props) {
     const [apiData, setApiData]= useState ([]);
 
+
+
 useEffect(() => {
     const popularData = async () => {
-        const popularDataEnds = await axios.get(`https://covid-19.dataflowkit.com/v1/usa`
+        const popularDataEnds = await axios.get(`https://covid-193.p.rapidapi.com/countries?search=usa`
     );
     setApiData(popularDataEnds.data);
 };
@@ -14,9 +18,11 @@ popularData();
 }, []);
 console.log(apiData)
 
+
+
     return (
         <div >
-             <h2>COVID-19 Data</h2>
+             
                 <div className = "bigdata">
                     <div className = "infecteddata">
                         <h4>Infected</h4>
