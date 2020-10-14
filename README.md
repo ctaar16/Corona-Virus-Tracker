@@ -89,7 +89,7 @@ Use Axios to consume data from Airtable, and GET/render that data in your compon
 Use Axios to POST/create new data on Airtable.
 Use only React for DOM Manipulation.
 
-Display COVID statistical data by country.
+
 Display global, cumulative, COVID statistics 
 Include a user submission box where they may enter symptoms they may be experiencing to inform of possible local outbreaks.
 

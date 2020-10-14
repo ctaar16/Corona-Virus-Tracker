@@ -1,16 +1,11 @@
 
 
 * {
- background-image: url("https://images.unsplash.com/photo-1584582868981-38dbd5d1a86e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=60");
- background-repeat: round;
+ /* background-image: url("https://wtov9.com/resources/media/14eff892-1d91-4a4d-a6e8-7e37d0f40cca-large16x9_GettyImages1200769096.jpg?1584841237704"); */
+ /* background-repeat: round; */
+ color: aliceblue;
 }
 
-.header {
-  text-align: center;
-  background: rgb(66, 211, 53);
-  
-
-}
 
 body {
   margin: 0;
@@ -21,6 +16,8 @@ body {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   background: rgb(223, 219, 219);
+  background-image: url("https://wtov9.com/resources/media/6d60feaa-9e0a-4f74-9ac3-fe2671a6733d-large16x9_GettyImages1203626286.jpg?1584668466722");
+  background-repeat: round;
 }
 
 code {
@@ -48,11 +45,19 @@ code {
   flex-direction: inline-block;
 }
 
-.infecteddata{
+
+.boxes{
+  border: solid white 2px;
+  margin: 5px;
+  padding: 20px;
+  width: 300px;
+}
+
+/* .infecteddata{
 border: solid black 2px;
 margin: 5px;
 padding: 20px;
-
+color: aliceblue;
 }
 
 .recovereddata{
@@ -65,9 +70,9 @@ padding: 20px;
 .deathdata {
   border: solid black 2px;
   margin: 5px;
-  padding: 20px;
+  padding: 20px; */
 
-}
+
 
 .graph {
   border: solid black 2px;

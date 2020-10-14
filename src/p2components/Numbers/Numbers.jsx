@@ -37,19 +37,19 @@ function  Numbers (props) {
     return (
         
                 <div className = "bigdata">
-                    <div className = "infecteddata">
+                    <div className = "boxes">
                     <h4>Number of Active Cases</h4>
                         <h5>Infected: {confirmedData} </h5>
                         <h5>Date: {date}</h5>
                     </div>
 
-                    <div className = "recovereddata">
+                    <div className = "boxes">
                         <h4>Number of Recovered Cases</h4>
                         <h5>Recovered: {recovery}</h5>
                         <h5>Date: {date}</h5>
                     </div>
 
-                    <div className = "deathdata">
+                    <div className = "boxes">
                         <h4>Number of Deaths</h4>
                         <h5>Deaths: {death}</h5>
                         <h5>Date: {date}</h5>
