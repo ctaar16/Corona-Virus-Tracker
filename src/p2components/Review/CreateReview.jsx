@@ -11,8 +11,8 @@ function CreateReview(props) {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
+
         //we have to make a field object that holds the title, text, and author.
-     
         const fields = {
             zipCode,
             symptoms,
@@ -27,11 +27,6 @@ function CreateReview(props) {
           } 
         );
         props.setFetchReviews(!props.fetchReviews);
-         
-        setZipCode("");
-        setSymptoms("");
-        setName("");
-       
 
 
     };
@@ -39,12 +34,9 @@ function CreateReview(props) {
     return (
 
 <div>
-      <Link to= "/" >
-      <h3> Home </h3>
-      </Link>
-
+  
       <Link to= "/Review" >
-      <h3> See Reviews </h3>
+      <button> See What Others Have Posted </button>
       </Link>
 
         <div>

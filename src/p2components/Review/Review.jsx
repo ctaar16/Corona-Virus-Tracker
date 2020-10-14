@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import axios from "axios"
-import { Link } from "react-router-dom"; 
+
 // import UpdateReview from './UpdateReview';
 
 
@@ -22,18 +22,9 @@ function Review(props) {
 
 
     return (
+     
+
        <div>
-            <div>
-                <Link to= "/" >
-                    <h3> Home </h3>
-                </Link>
-
-                <Link to= "/CreateReview" >
-                    <h3> Create Review </h3>
-                </Link>
-
-            </div>
-        
             <div className = "review">
             <h4>{props.covid.fields.name}</h4>
             <h4>{props.covid.fields.zipCode}</h4>

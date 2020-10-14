@@ -1,10 +1,8 @@
 
 
 * {
-  display: flexbox;
-  text-decoration: border 22px;
-  text-decoration-color:  #2852a0;
-
+ background-image: url("https://images.unsplash.com/photo-1584582868981-38dbd5d1a86e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=60");
+ background-repeat: round;
 }
 
 .header {
@@ -31,13 +29,7 @@ code {
    
 }
 
-button {
-  display: inline-flex;
-  padding: 3px;
-  margin: 4px;
-  border: solid #2852a0 2px;
-  
-}
+
 
 .name {
   display: flex block;
@@ -50,10 +42,10 @@ button {
 }
 
 .bigdata{
-  /* border: solid black 2px; */
   margin: 5px;
   padding: 8px;
   display: inline-flex;
+  flex-direction: inline-block;
 }
 
 .infecteddata{
@@ -74,7 +66,7 @@ padding: 20px;
   border: solid black 2px;
   margin: 5px;
   padding: 20px;
-  
+
 }
 
 .graph {
@@ -82,10 +74,6 @@ padding: 20px;
   margin: 5px;
 }
 
-.selector {
-  border: solid black 2px;
-  margin: 5px;
-}
 
 .review {
   border: solid black 2px;
@@ -96,21 +84,29 @@ padding: 20px;
 .namebox{
   padding: 2px;
   margin: 7px;
-  
+  display: inline-block;
 }
 
 .zipCode {
   padding: 2px;
   margin: 7px;
-  
+  display: inline-block;
 }
 
 .symptoms {
   padding: 2px;
   margin: 7px; 
+  display: inline-block;
 }
 
 
+button {
+  display: inline-flex;
+  padding: 3px;
+  margin: 4px;
+  border: solid #2852a0 2px;
+  text-decoration: none;
+}
 
 /* Media Queries sourced from https://css-tricks.com/snippets/css/media-queries-for-standard-devices/ */
 

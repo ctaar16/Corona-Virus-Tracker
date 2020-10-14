@@ -1,21 +1,13 @@
-// import React, {useState, useEffect } from "react";
-// // import { fetchNewData } from '../../api';
+
+import React from "react";
 
 
-// const Graphs = (props) => {
-//     const[newData, setNewData] = useState ([]);
-    
-// // useEffect(() => {
-// //     const fetchNewData
-// // })
+function Graph (props) {                          
+    return (                                       
+        <div>
+            <h2> Global Totals</h2>
+        </div>
+    )
+}
 
-//     return (
-//         <div className = "graph">
-//             <h2>Graph</h2>          
-
-//         </div>
-        
-//     )
-// }
-
-// export default Graphs;
+export default Graph;

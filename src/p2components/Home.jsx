@@ -7,10 +7,10 @@ function Home (props) {                             //setting up the function th
     <div>
         <div>
             <Link to= "/CreateReview" >
-            <h3> Check Self-Reported Cases</h3>
+            <button> Feeling Symptomatic? Let Us Know!</button>
             </Link>
-            </div>
-     </div>
+        </div>
+    </div>
     )
 }
 

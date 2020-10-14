@@ -4,9 +4,10 @@ import Numbers from "./p2components/Numbers/Numbers";
 import Review from "./p2components/Review/Review";
 import CreateReview from "./p2components/Review/CreateReview";
 import Home from "./p2components/Home";
-import { Link, Route } from "react-router-dom";
+import { Route } from "react-router-dom";
 import Footer from "./p2components/Footer";
 import Header from "./p2components/Header";
+import Graph from "./p2components/Graphs/Graphs"
 
 
 
@@ -33,41 +34,39 @@ function App() {
   return (
     <div>
       <div className="whatever">
-        {/* <h1 className="header">COVID-Tracker</h1> */}
-        <Route>
-          <Header/>
-        </Route>
-        <Route exact path ="/">
-        <Home />
-        </Route>
-       
-        <Numbers />
-      </div>
+    </div>
+        <div>
+            <Header/>
+            <Route exact path ="/">
+              <Home />
+            </Route>
+            <Route>
+              <Graph />
+            </Route>
 
-      <div className="App">
-        <Route path = "/CreateReview">
-        <h2>Feeling Symptomatic?</h2>
-        <CreateReview
-          fetchReviews={fetchReviews}
-          setFetchReviews={setFetchReviews} />
-        </Route>
-        
-        <Route path = "/Review" >
-        {reviews.map((covid) => (
-          //review component has a prop called review with a value
-          <Review
-            key={covid.id}
-            covid={covid}
-            fetchReviews={fetchReviews}
-            setFetchReviews={setFetchReviews}
+            <Route>
+              <Numbers />
+            </Route>
+        </div>
+
+        <div className="App">
+          <Route path = "/CreateReview">
+            <h2>Feeling Symptomatic?</h2>
+              <CreateReview
+                fetchReviews={fetchReviews}
+                setFetchReviews={setFetchReviews} />
+          </Route>
+          <Route path = "/Review" >
+              {reviews.map((covid) => (
+              <Review
+                key={covid.id}
+                covid={covid}
+                fetchReviews={fetchReviews}
+                setFetchReviews={setFetchReviews}
           />
         ))}
-        </Route>
-
-        <Route>
-          <Footer />
-        </Route>
-
+          </Route>
+            <Footer />
       </div>
     </div>
   );
