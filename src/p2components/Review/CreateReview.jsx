@@ -33,7 +33,7 @@ function CreateReview(props) {
       </Link>
         <div>
           <form className = "update-form" onSubmit = {handleSubmit}>  
-            <label htmlFor='name'>Name:</label>
+            <label htmlFor='name'></label>
               <input
                 className = "namebox"
                 name='name'
@@ -41,7 +41,7 @@ function CreateReview(props) {
                  placeholder = "Name"
                 value={name}
                 onChange={(e) => setName(e.target.value)}/>
-            <label htmlFor='zipcode'>Zip Code:</label>
+            <label htmlFor='zipcode'></label>
               <input
               className = "zipCode"
               name='zipcode'
@@ -49,7 +49,7 @@ function CreateReview(props) {
               placeholder = "Zip Code"
               value={zipCode}
               onChange={(e) => setZipCode(e.target.value)}/> 
-            <label htmlFor='symptoms'>Symptoms:</label>
+            <label htmlFor='symptoms'></label>
               <input
                 className = "symptoms"
                 name='Symptoms'
