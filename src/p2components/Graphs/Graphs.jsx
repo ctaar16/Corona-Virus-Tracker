@@ -5,7 +5,7 @@ import React from "react";
 function Graph (props) {                          
     return (                                       
         <div>
-            <h2> Global Totals</h2>
+            <h2> Global Cumulative Statistics</h2>
         </div>
     )
 }

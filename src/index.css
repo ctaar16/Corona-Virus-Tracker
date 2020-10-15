@@ -30,7 +30,6 @@ code {
 
 .name {
   display: flex block;
-  
 }
 
 .zip {
@@ -42,7 +41,7 @@ code {
   margin: 5px;
   padding: 8px;
   display: inline-flex;
-  flex-direction: inline-block;
+  /* flex-direction: column; */
 }
 
 
@@ -51,37 +50,19 @@ code {
   margin: 5px;
   padding: 20px;
   width: 300px;
+
+
 }
-
-/* .infecteddata{
-border: solid black 2px;
-margin: 5px;
-padding: 20px;
-color: aliceblue;
-}
-
-.recovereddata{
-  border: solid black 2px;
-  margin: 5px;
-  padding: 20px;
-  
-}
-
-.deathdata {
-  border: solid black 2px;
-  margin: 5px;
-  padding: 20px; */
-
 
 
 .graph {
-  border: solid black 2px;
+  border: solid white 2px;
   margin: 5px;
 }
 
 
 .review {
-  border: solid black 2px;
+  border: solid white 2px;
   margin: 5px;
   
 }
@@ -111,7 +92,14 @@ button {
   margin: 4px;
   border: solid #2852a0 2px;
   text-decoration: none;
+  color: black;
+  background-color: #ffffff;
 }
+
+
+
+
+
 
 /* Media Queries sourced from https://css-tricks.com/snippets/css/media-queries-for-standard-devices/ */
 

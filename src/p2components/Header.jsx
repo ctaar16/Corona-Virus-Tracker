@@ -7,7 +7,7 @@ function Header (props) {                             //setting up the function 
         <div>
             <h1> COVID-Tracker</h1>
             <Link to= "/" >
-                    <button> Home </button>
+                    <button className = "homeButton"> Home </button>
                 </Link>
 
                 

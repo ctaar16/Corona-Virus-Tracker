@@ -36,7 +36,7 @@ function CreateReview(props) {
 <div>
   
       <Link to= "/Review" >
-      <button> See What Others Have Posted </button>
+      <button> See What Others Posted </button>
       </Link>
 
         <div>

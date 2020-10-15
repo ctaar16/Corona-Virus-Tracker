@@ -28,31 +28,28 @@ function  Numbers (props) {
         }
         getData();
       }, []);
-// console.log(confirmedData);
-// console.log(recovery);
-// console.log(death);
-// console.log(date)
+
 
 
     return (
         
                 <div className = "bigdata">
                     <div className = "boxes">
-                    <h4>Number of Active Cases</h4>
-                        <h5>Infected: {confirmedData} </h5>
-                        <h5>Date: {date}</h5>
+                    <h3>Number of Confirmed Cases</h3>
+                        <h4>Infected: {confirmedData} </h4>
+                        <h5>Last Updated: {date}</h5>
                     </div>
 
                     <div className = "boxes">
-                        <h4>Number of Recovered Cases</h4>
-                        <h5>Recovered: {recovery}</h5>
-                        <h5>Date: {date}</h5>
+                        <h3>Number of Recovered Cases</h3>
+                        <h4>Recovered: {recovery}</h4>
+                        <h5>Last Updated: {date}</h5>
                     </div>
 
                     <div className = "boxes">
-                        <h4>Number of Deaths</h4>
-                        <h5>Deaths: {death}</h5>
-                        <h5>Date: {date}</h5>
+                        <h3>Number of Deaths</h3>
+                        <h4>Deaths: {death}</h4>
+                        <h5>Last Updated: {date}</h5>
                     </div>
                 </div>
         
