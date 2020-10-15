@@ -12,13 +12,11 @@ function CreateReview(props) {
     const handleSubmit = async (e) => {
         e.preventDefault();
 
-        //we have to make a field object that holds the title, text, and author.
         const fields = {
             zipCode,
             symptoms,
             name,
         };
-        // make POST request to our endpoint
         const airtableURL = `https://api.airtable.com/v0/${process.env.REACT_APP_AIRTABLE_BASE}/covid`;
         await axios.post(airtableURL, {fields}, {
             headers: {
@@ -27,18 +25,12 @@ function CreateReview(props) {
           } 
         );
         props.setFetchReviews(!props.fetchReviews);
-
-
     };
-
     return (
-
-<div>
-  
+      <div>
       <Link to= "/Review" >
       <button className = "textTransformX"> See What Others Posted </button>
       </Link>
-
         <div>
           <form className = "update-form" onSubmit = {handleSubmit}>  
             <label htmlFor='name'>Name:</label>
@@ -68,7 +60,7 @@ function CreateReview(props) {
               <button className = "textTransformX" type='submit'>SUBMIT</button>
           </form>
         </div>
-        </div>
+      </div>
     );
 }
 export default CreateReview;

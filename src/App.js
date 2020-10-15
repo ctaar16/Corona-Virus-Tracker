@@ -10,13 +10,10 @@ import Header from "./p2components/Header";
 import Graph from "./p2components/Graphs/Graphs"
 
 
-
-
 function App() {
   const [reviews, setReviews] = useState([]);
   const [fetchReviews, setFetchReviews] = useState(false);
  
-
   useEffect(() => {
     const getReviews = async () => {
       const airtableURL = `https://api.airtable.com/v0/${process.env.REACT_APP_AIRTABLE_BASE}/covid?sort%5B0%5D%5Bfield%5D=name`;
@@ -43,12 +40,10 @@ function App() {
             <Route>
               <Graph />
             </Route>
-
             <Route>
               <Numbers />
             </Route>
         </div>
-
         <div className="App">
           <Route path = "/CreateReview">
             <h2>Feeling Symptomatic?</h2>

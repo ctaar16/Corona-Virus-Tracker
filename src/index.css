@@ -4,6 +4,7 @@
  /* background-image: url("https://wtov9.com/resources/media/14eff892-1d91-4a4d-a6e8-7e37d0f40cca-large16x9_GettyImages1200769096.jpg?1584841237704"); */
  /* background-repeat: round; */
  color: aliceblue;
+ 
 }
 
 
@@ -17,7 +18,10 @@ body {
   text-align: center;
   background: rgb(223, 219, 219);
   background-image: url("https://wtov9.com/resources/media/6d60feaa-9e0a-4f74-9ac3-fe2671a6733d-large16x9_GettyImages1203626286.jpg?1584668466722");
-  background-repeat: round;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  text-shadow: 2px 2px black;
 }
 
 code {
@@ -30,20 +34,21 @@ code {
 
 .name {
   display: flex block;
+  flex-direction: column;
 }
 
 .zip {
   display: flex block;
   margin: 3px;
+  
 }
 
 .bigdata{
   margin: 5px;
   padding: 8px;
-  display: inline-flex;
-  /* flex-direction: column; */
+  display: column;
+  flex-direction: column;
 }
-
 
 .boxes{
   border: solid white 2px;
@@ -51,28 +56,27 @@ code {
   padding: 20px;
   width: 300px;
   background-color: rgb(0,0,0, .7);
-
+  text-shadow: 2px 2px black;
+  display:column;
 }
-
 
 .graph {
-  
+  text-shadow: 2px 2px black;
   margin: 5px;
-  
 }
-
 
 .review {
   border: solid white 2px;
   margin: 5px;
-  
 }
 
 .namebox{
   padding: 2px;
   margin: 7px;
   display: inline-block;
-  
+  flex-direction: column;
+  color:black;
+  flex-direction: column;
 }
 
 .zipCode {
@@ -80,6 +84,7 @@ code {
   margin: 7px;
   display: inline-block;
   color: black;
+  flex-direction: column;
 }
 
 .symptoms {
@@ -87,6 +92,7 @@ code {
   margin: 7px; 
   display: inline-block;
   color: black;
+  flex-direction: block;
 }
 
 
@@ -95,10 +101,9 @@ button {
   padding: 3px;
   margin: 4px;
   border: solid #2852a0 2px;
-  text-decoration: none;
   color: black;
   background-color: #f7f3f3;
-  
+  flex-direction: column;
 }
 
 
@@ -115,35 +120,26 @@ button {
   
 
 
-
-
-
-
-
-
-
-
 /* Media Queries sourced from https://css-tricks.com/snippets/css/media-queries-for-standard-devices/ */
-
-/* mobile */
-@media only screen 
-  and (min-device-width: 375px) 
-  and (max-device-width: 667px) 
-  and (-webkit-min-device-pixel-ratio: 2) { 
-
-}
-
-/* tablet */
-@media only screen 
-  and (min-device-width: 834px) 
-  and (max-device-width: 1112px)
-  and (-webkit-min-device-pixel-ratio: 2) {
-
-}
 
 /* Desktop/laptop */
 @media screen 
   and (min-device-width: 1200px) 
   and (max-device-width: 1600px) 
   and (-webkit-min-device-pixel-ratio: 1) { 
+} 
+
+/* tablet */
+@media only screen 
+  and (min-device-width: 834px) 
+  and (max-device-width: 1199px)
+  and (-webkit-min-device-pixel-ratio: 2) {
 }
+
+/* Mobile */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) { 
+}
+

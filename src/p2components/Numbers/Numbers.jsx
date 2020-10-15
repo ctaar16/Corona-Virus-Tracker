@@ -4,10 +4,15 @@ import React, { useState, useEffect } from "react";
 
 function  Numbers (props) {
     const [confirmedData, setConfirmedData] = useState([])
+    const [confDiff, setConfDiff] = useState([])
     const [recovery, setRecovery] = useState([])
+    const [recDiff, setRecoDiff] = useState([])
     const [death, setDeath] = useState ([])
     const [date, setDate] = useState([])
+    const [fat, setFat] = useState([])
 
+
+ 
     
 
     useEffect(() => {
@@ -22,38 +27,37 @@ function  Numbers (props) {
           }
         });
         setConfirmedData(response.data.data.confirmed)
+        setConfDiff(response.data.data.confirmed_diff)
         setRecovery(response.data.data.recovered)
+        setRecoDiff(response.data.data.recovered_diff)
         setDeath(response.data.data.deaths)
-        setDate(response.data.data.date)
+        setDate(response.data.data.last_update)
+        setFat(response.data.data.fatality_rate)
         }
         getData();
       }, []);
 
-
-
     return (
-        
-                <div className = "bigdata">
-                    <div className = "boxes">
-                    <h3>Number of Confirmed Cases</h3>
-                        <h4>Infected: {confirmedData} </h4>
-                        <h5>Last Updated: {date}</h5>
-                    </div>
-
-                    <div className = "boxes">
-                        <h3>Number of Recovered Cases</h3>
-                        <h4>Recovered: {recovery}</h4>
-                        <h5>Last Updated: {date}</h5>
-                    </div>
-
-                    <div className = "boxes">
-                        <h3>Number of Deaths</h3>
-                        <h4>Deaths: {death}</h4>
-                        <h5>Last Updated: {date}</h5>
-                    </div>
-                </div>
-        
-        
+         <div className = "bigdata">
+            <div className = "boxes">
+                <h3>Number of Confirmed Cases</h3>
+                <h4>Infected: {confirmedData} </h4>
+                <h4>New Cases: {confDiff} </h4>
+                <h5>Last Updated: {date}</h5>
+            </div>
+            <div className = "boxes">
+                <h3>Number of Recovered Cases</h3>
+                <h4>Recovered: {recovery}</h4>
+                <h4>Newly Recovered: {recDiff}</h4>
+                <h5>Last Updated: {date}</h5>
+            </div>
+            <div className = "boxes">
+                <h3>Number of Deaths</h3>
+                <h4>Deaths: {death}</h4>
+                <h4>Fatality Rate: {fat}</h4>
+                <h5>Last Updated: {date}</h5>
+            </div>
+         </div> 
     )
 }
 
