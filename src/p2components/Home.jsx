@@ -7,7 +7,7 @@ function Home (props) {                             //setting up the function th
     <div>
         <div>
             <Link to= "/CreateReview" >
-            <button> Feeling Symptomatic? Let Us Know!</button>
+            <button className = "textTransformX"> Feeling Symptomatic? Let Us Know!</button>
             </Link>
         </div>
     </div>

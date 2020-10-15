@@ -36,7 +36,7 @@ function CreateReview(props) {
 <div>
   
       <Link to= "/Review" >
-      <button> See What Others Posted </button>
+      <button className = "textTransformX"> See What Others Posted </button>
       </Link>
 
         <div>
@@ -65,7 +65,7 @@ function CreateReview(props) {
                 placeholder = "Yes / No"
                 value={symptoms}
                 onChange={(e) => setSymptoms(e.target.value)}/>
-              <button type='submit'>SUBMIT</button>
+              <button className = "textTransformX" type='submit'>SUBMIT</button>
           </form>
         </div>
         </div>

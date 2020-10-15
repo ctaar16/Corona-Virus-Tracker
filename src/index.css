@@ -50,14 +50,15 @@ code {
   margin: 5px;
   padding: 20px;
   width: 300px;
-
+  background-color: rgb(0,0,0, .7);
 
 }
 
 
 .graph {
-  border: solid white 2px;
+  
   margin: 5px;
+  
 }
 
 
@@ -71,18 +72,21 @@ code {
   padding: 2px;
   margin: 7px;
   display: inline-block;
+  
 }
 
 .zipCode {
   padding: 2px;
   margin: 7px;
   display: inline-block;
+  color: black;
 }
 
 .symptoms {
   padding: 2px;
   margin: 7px; 
   display: inline-block;
+  color: black;
 }
 
 
@@ -93,8 +97,26 @@ button {
   border: solid #2852a0 2px;
   text-decoration: none;
   color: black;
-  background-color: #ffffff;
+  background-color: #f7f3f3;
+  
 }
+
+
+/* button animations sourced from: https://emilkowalski.github.io/css-effects-snippets/  */
+.textTransformX {
+  color: hsl(222, 25%, 14%);
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.textTransformX:hover {
+  transform: translateX(4px);
+  color: hsl(0, 0%, 0%);
+}
+  
+
+
+
+
 
 
 
