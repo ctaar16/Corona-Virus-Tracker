@@ -10,7 +10,7 @@ function  Numbers (props) {
     const [death, setDeath] = useState ([])
     const [date, setDate] = useState([])
     const [fat, setFat] = useState([])
-    
+
     useEffect(() => {
         const getData = async () => {
           let response = await axios ({
@@ -50,7 +50,7 @@ function  Numbers (props) {
             <div className = "boxes">
                 <h3>Number of Deaths</h3>
                 <h4>Deaths: {death}</h4>
-                <h4>Fatality Rate: {fat}</h4>
+                <h4>Fatality Rate: {fat*100} %</h4>
                 <h5>Last Updated: {date}</h5>
             </div>
          </div> 
