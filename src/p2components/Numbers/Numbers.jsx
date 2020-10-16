@@ -10,11 +10,7 @@ function  Numbers (props) {
     const [death, setDeath] = useState ([])
     const [date, setDate] = useState([])
     const [fat, setFat] = useState([])
-
-
- 
     
-
     useEffect(() => {
         const getData = async () => {
           let response = await axios ({

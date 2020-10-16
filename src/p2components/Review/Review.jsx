@@ -4,7 +4,6 @@ import axios from "axios"
 
 function Review(props) {
     const [deleted, setDeleted] = useState(false);
-
     const handleDelete = async (event) => {
         setDeleted(true);
             const airtableURL = `https://api.airtable.com/v0/${process.env.REACT_APP_AIRTABLE_BASE}/covid/${props.covid.id}`;
@@ -18,13 +17,13 @@ function Review(props) {
     return (
        <div>
             <div className = "review">
-            <h4>{props.covid.fields.name}</h4>
-            <h4>{props.covid.fields.zipCode}</h4>
-            <h4>{props.covid.fields.symptoms}</h4>
+            <h4>Name: {props.covid.fields.name}</h4>
+            <h4>From: {props.covid.fields.zipCode}</h4>
+            <h4>Symptoms: {props.covid.fields.symptoms}</h4>
             <button onClick={handleDelete}>{deleted ? "deleted" : "delete"}
             </button> 
             </div>
-        </div> 
+        </div>    
     );
 }
 

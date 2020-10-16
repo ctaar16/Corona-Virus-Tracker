@@ -2,14 +2,16 @@ import React from "react";
 import {Link} from "react-router-dom";
 
 
-function Header (props) {                             //setting up the function that will display "homepage" data.
-    return (                                        //this div will provide the bird images to the homescreen
+function Header (props) {                          
+    return (                                        
         <div>
-            <h1> COVID-Tracker</h1>
-            <Link to= "/" >
-                    <button className = "textTransformX"> Home </button>
-                </Link>
-
+            <div>
+                <h1> COVID-Tracker</h1>
+                    <Link to= "/" >
+                        <button className = "textTransformX"> Home </button>
+                    </Link> 
+            </div>
+            
                 
         </div>
     )

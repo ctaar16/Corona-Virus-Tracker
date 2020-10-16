@@ -1,9 +1,8 @@
 import React from "react";
-import { Link } from "react-router-dom";        //Importing data from dom and react
+import { Link } from "react-router-dom";        
 
-function Home (props) {                             //setting up the function that will display "homepage" data.
-    return (                                        //this div will provide the bird images to the homescreen
-        
+function Home (props) {                             
+    return (                                        
     <div>
         <div>
             <Link to= "/CreateReview" >

@@ -11,7 +11,6 @@ function CreateReview(props) {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-
         const fields = {
             zipCode,
             symptoms,
@@ -54,7 +53,7 @@ function CreateReview(props) {
                 className = "symptoms"
                 name='Symptoms'
                 type="text"
-                placeholder = "Yes / No"
+                placeholder = "List Symptoms Here"
                 value={symptoms}
                 onChange={(e) => setSymptoms(e.target.value)}/>
               <button className = "textTransformX" type='submit'>SUBMIT</button>
