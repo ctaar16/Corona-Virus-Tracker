@@ -1,6 +1,6 @@
 Project Overview
 
-Project Name:
+Project Name:COVID-Tracker
 
 COVID-Tracker
 link: https://elegant-hawking-098264.netlify.app/
