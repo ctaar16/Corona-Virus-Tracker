@@ -36,11 +36,10 @@ code {
   border: solid white 2px;
   margin: 5px;
   padding: 20px;
-  width: 300px;
+  width: 317px;
   background-color: rgb(0,0,0, .8);
   text-shadow: 2px 2px black;
   display: inline-block;
-
 }
 
 .graph {
@@ -82,7 +81,7 @@ button {
   border: solid #b90909 2px;
   color: black;
   background-color: #f7f3f3;
-  
+  border-radius: 35px;
 }
 
 

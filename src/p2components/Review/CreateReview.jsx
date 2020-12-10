@@ -50,6 +50,7 @@ function CreateReview(props) {
               onChange={(e) => setZipCode(e.target.value)}/> 
             <label htmlFor='symptoms'></label>
               <input
+                
                 className = "symptoms"
                 name='Symptoms'
                 type="text"

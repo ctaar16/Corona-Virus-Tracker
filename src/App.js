@@ -22,7 +22,7 @@ function App() {
           Authorization: `Bearer ${process.env.REACT_APP_AIRTABLE_KEY}`,
         },
       });
-      console.log(response.data);
+      ;
       setReviews(response.data.records);
     };
     getReviews();
